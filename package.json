@@ -1,0 +1,23 @@
+{
+  "name": "devops-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nornjuidat/devops-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nornjuidat/devops-final/issues"
+  },
+  "homepage": "https://github.com/nornjuidat/devops-final#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
