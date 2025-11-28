@@ -2,15 +2,10 @@
   "name": "devops-final",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-=======
-  "main": "index.js",
-  "scripts": {
->>>>>>> 441c13949223022c908a774d794563bcf00ed769
     "test": "jest"
   },
   "repository": {
@@ -24,16 +19,11 @@
     "url": "https://github.com/nornjuidat/devops-final/issues"
   },
   "homepage": "https://github.com/nornjuidat/devops-final#readme",
-<<<<<<< HEAD
   "dependencies": {
     "express": "^4.21.2"
   },
   "devDependencies": {
     "jest": "^30.2.0",
     "nodemon": "^3.1.0"
-=======
-  "devDependencies": {
-    "jest": "^30.2.0"
->>>>>>> 441c13949223022c908a774d794563bcf00ed769
   }
 }
