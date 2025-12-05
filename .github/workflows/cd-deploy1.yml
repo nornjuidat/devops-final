@@ -44,7 +44,7 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd /home/ubuntu/app-for-CD
+          cd /home/ubuntu/my-docker-project
           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/demo_devops:latest
           docker compose down
           docker compose up -d
