@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo_devops:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/test:latest
           platforms: linux/arm64
         
 
@@ -47,6 +47,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/ubuntu/my-docker-project
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/demo_devops:latest
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/test:latest
             docker compose down
             docker compose up -d
