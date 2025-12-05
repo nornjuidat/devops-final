@@ -24,7 +24,6 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
@@ -32,7 +31,6 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo_devops:latest
           platforms: linux/arm64
-        
 
   deploy:
     runs-on: ubuntu-latest
@@ -46,7 +44,15 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            # ודא שהתקייה קיימת
+            mkdir -p /home/ubuntu/my-docker-project
             cd /home/ubuntu/my-docker-project
+            
+            # משוך את התמונה האחרונה
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/demo_devops:latest
-            docker compose down
-            docker compose up -d
+            
+            # עצור והסר את הקונטיינרים הקיימים
+            docker-compose down
+            
+            # הרץ את הקונטיינרים ב-background
+            docker-compose up -d
