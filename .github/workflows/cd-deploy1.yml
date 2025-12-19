@@ -48,6 +48,6 @@ jobs:
           script: |
             cd /home/ubuntu/my-docker-project
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/test:latest
-            docker compose down
-            docker compose up -d
+            docker-compose down
+            docker-compose up -d
 
