@@ -48,7 +48,7 @@ jobs:
           script: |
             cd /home/ubuntu/my-docker-project
             echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
-            docker compose pull ${{ secrets.DOCKERHUB_USERNAME }}/test:latest
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/test:latest
             docker compose down
             docker compose up -d
 
