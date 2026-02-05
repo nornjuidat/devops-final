@@ -1,0 +1,12 @@
+  GNU nano 6.2                                       docker-compose.yml                                                 version: '3.8'
+
+services:
+  app:
+    image: nornjuidat/test:${IMAGE_TAG}
+    container_name: my-node-html-app
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+
+
+
