@@ -138,6 +138,29 @@
       .hero{grid-template-columns:1fr}
       .grid{grid-template-columns:1fr}
     }
+    button{
+  padding:10px 16px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.15);
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color:#08101f;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+}
+
+button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+  opacity: .95;
+}
+
+button:active{
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+
   </style>
 </head>
 
@@ -289,14 +312,14 @@
       <div class="timeline">
         <div class="item">
           <div class="row">
-            <h3>Smart Irrigation System (כולל DB)</h3>
+            <h3>זו מערכת שמאפשרת למשתמשים ליצור, לשמור ולנהל הערות במקום אחד בצורה מסודרת.</h3>
             <span class="when">MongoDB</span>
           </div>
-          <p>מערכת בדיקת דם.</p>
+          <p>  מערכת ניהול פתקים</p>
           <p>
-            🔗 <a href="https://github.com/nornjuidat/Blood_monitoring.js" target="_blank">GitHub Repository</a>
+            🔗 <a href="https://github.com/nornjuidat/notes.system" target="_blank">GitHub Repository</a>
             <!-- אופציונלי: להחליף ללינק אמיתי אם יש -->
-<a href="http://blood-portfolionor.duckdns.org/home.html" target="_blank">
+<a href="https://notes-system.duckdns.org/login" target="_blank">
   <button>מעבר לפרויקט</button>
 </a>
           </p> 
